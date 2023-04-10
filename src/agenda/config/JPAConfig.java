@@ -16,7 +16,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableJpaRepositories("agenda.persistencia")
+@EnableJpaRepositories(basePackages = "agenda.persistencia", repositoryImplementationPostfix = "Agenda")
 @EnableTransactionManagement
 public class JPAConfig {
 

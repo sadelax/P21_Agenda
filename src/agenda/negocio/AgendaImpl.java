@@ -29,7 +29,7 @@ public class AgendaImpl implements Agenda{
 	@Override
 	public Contacto eliminar(int idContacto) {
 		Contacto c = dao.findByIdEager(idContacto);
-		dao.delete(c);
+		dao.delete(idContacto);
 		return c;
 	}
 
